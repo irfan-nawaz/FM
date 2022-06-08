@@ -1,0 +1,24 @@
+i) The key in object's key value pair will be auto converted to string if in case if we want to give numbers we have to give key in string (i.e "").
+
+ii) dots can be seen on:
+                            *   a method on an object,
+                            *   with functions like (promise.then),
+                            *   with array's methods,
+                            *   nested objects,
+                            *   prototype methods,
+                            *   spreaqd operator,...
+
+Note: anything with dot in JavaScript is an object
+
+
+primitive values:
+     
+    they will be stored directly in memory and if we create another primitive value then it will be stored in new memory location so we dont have to worry about the previous code.
+
+    ex: string, number, boolian, null, undefined,...
+
+Non- primitive:
+    stored in passed by refrence the memory points to another memory location where it is actually stored we need to worry if we change later as the previous lines of code might get affected if this non-primitive is used before.
+
+    ex: object, array, function,...
+
