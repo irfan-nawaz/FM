@@ -1,6 +1,8 @@
-i) The key in object's key value pair will be auto converted to string if in case if we want to give numbers we have to give key in string (i.e "").
+Objects:
 
-ii) dots can be seen on:
+    - The key in object's key value pair will be auto converted to string if in case if we want to give numbers we have to give key in string (i.e "").
+
+    - Dots can be seen on:
                             -   a method on an object,
                             -   with functions like (promise.then),
                             -   with array's methods,
@@ -8,7 +10,7 @@ ii) dots can be seen on:
                             -   prototype methods,
                             -   spreaqd operator,...
 
-Note: anything with dot in JavaScript is an object
+    Note: Anything with dot in JavaScript is an object
 
 
 primitive values:
@@ -30,9 +32,27 @@ Note: see below blog to understand clearly,
   |->    https://www.freecodecamp.org/news/primitive-vs-reference-data-types-in-javascript/
 
 
+
 Arrays:
     - Arrays are objects with some of their propritary methods.
     - arrays are propritarily stored in key pairs of strings "0","1",,,
     - but we can also store other key value pairs inside an array like array.name = "arrayName".
     - we can access such above key value pair by object notation (i.e console.log(array.name).)
-    - the usual array's key value pairs can be accessed by using bracket notataion (i.e consoe.log(array[0]).)
+    - but adding key value pairs other than numerical indices will not increase the lenth of array.
+    - the usual array's key value pairs(numerical indices) can be accessed by using bracket notataion (i.e consoe.log(array[0]).)
+
+
+
+Bracket Notation:
+    - in brackets used for objects or arrays we can perform following:
+                                                                        - pass numbers,
+                                                                        - pass strings
+                                                                        - perform mathematial operations
+                                                                        - pass IFFE functions,...
+
+
+
+Non-Valid Characters: (',^,&,*,....)
+    - Try to avoid using these non-valid characters as your object's keys.
+    - if in case you have to then use them in a bracket notation (ex -> obj["^'&*"] = "value").
+    - 
