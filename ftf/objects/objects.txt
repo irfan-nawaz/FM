@@ -56,3 +56,7 @@ Non-Valid Characters: (',^,&,*,....)
     - Try to avoid using these non-valid characters as your object's keys.
     - if in case you have to then use them in a bracket notation (ex -> obj["^'&*"] = "value").
     - 
+
+
+Destructuring:
+    - It is a smilpler way to variable declaration which can save time by non-repetiton.
