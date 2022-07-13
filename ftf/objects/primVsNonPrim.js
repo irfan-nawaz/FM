@@ -25,3 +25,6 @@ prim = "now im changing my value by creating new memory block"
 console.log(prim);
 
 // But in case of Non-primitive as they are passed by refrence if the refrence is changed once then the value of such non-primitive variable is changed in the entire code and we might get different results if we run the code again.
+
+// NOTE: It is always adviced to copy your dataStructures instead of mutating them to avoid the risk of changing the code behaviour in different places where the datastructure is used.
+
