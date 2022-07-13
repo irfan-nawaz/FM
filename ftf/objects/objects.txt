@@ -1,3 +1,15 @@
+Assignment With Dots:
+    - We use dot assignment with objects. 
+        - which covers the following cases:
+            - objects
+            - arrays
+            - functions
+            - string methods (string will be converted to stringObjects by javaScript)
+            - promises (promises are objects by default)
+            - prototype methods
+            - native methods like for array, string, object, functions.
+            - nested objects
+            
 Objects:
 
     - The key in object's key value pair will be auto converted to string if in case if we want to give numbers we have to give key in string (i.e "").
