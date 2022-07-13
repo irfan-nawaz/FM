@@ -43,13 +43,17 @@ Arrays:
 
 
 
-Bracket Notation:
+DOT Notation:
+    - dot nothations are only limited to strings we can only use (.name) where "name" can only be string otherwise it will result in error. 
     - we cannot use numbers in dot notation as it will give a syntax error as it will start looking for number directly instead of converting it to a string.
     - there are some other expressions along with numbers called Non-Valid Characters: (',^,&,*,....) which will give syntax errors if used in dot notation.
     - but especially for numbers when used in bracket notation we need not give it as string as they will be auto-converted into strings by JS, and for all other  Non-Valid Characters: (',^,&,*,....) we need to give them as strings in brackets.
-    - brackets are used in case when we are not able to use the dot notation.
-    - NOTE: dot notation basically transforms into brackaet notation with strings, so in every case where we use dot notation we can use bracket with strings inside it
+    
+NOTE: dot notation basically transforms into brackaet notation with strings, so in every case where we use dot notation we can use bracket with strings inside it
     - .something <==> ["something"]
+    
+BRACKET Notation:   
+    - brackets are used in case when we are not able to use the dot notation.
     - then the reason to use dot notation is simply that it is more easy to type than bracket notation
     - in brackets we can perform any operation or give variables, functions,etc... so if we don't specify it as string in brackets it will look for any variable or function and return error if not found, if we actually want to use variable, function or give any mathematical operation as the input to the object then we can use bracket without any strings i.e"".
     - the brackets used for objects or arrays can perform following:
