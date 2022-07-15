@@ -87,3 +87,4 @@ Non-Valid Characters: (',^,&,*,....)
 
 Destructuring:
     - It is a smilpler way to variable declaration which can save time by non-repetiton.
+    - It consists of target and source
