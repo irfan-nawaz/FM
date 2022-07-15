@@ -54,8 +54,9 @@ Arrays:
     - we can access such above key value pair by object notation (i.e console.log(array.name).)
     - but adding key value pairs other than numerical indices will not increase the lenth of array.
     - the usual array's key value pairs(numerical indices) can be accessed by using bracket notataion (i.e consoe.log(array[0]).)
-
-
+    - understand the difference between the properties and methods of a datatype like array or object etc,...
+        -> E.X array.length() , array.name are called properties weather they have any use or not
+               array.push() , array.pop() are called methods generally we can identify methods as they have brackets to them.
 
 DOT Notation:
     - dot nothations are only limited to strings we can only use (.name) where "name" can only be string otherwise it will result in error. 
