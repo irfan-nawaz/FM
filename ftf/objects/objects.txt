@@ -9,7 +9,7 @@ Assignment With Dots:
             - prototype methods
             - native methods like for array, string, object, functions.
             - nested objects
-            
+            - spread operator
 Objects:
 
     - The key in object's key value pair will be auto converted to string if in case if we want to give numbers we have to give key in string (i.e "").
@@ -42,6 +42,8 @@ Non- primitive:
 
 Note: see below blog to understand clearly,
   |->    https://www.freecodecamp.org/news/primitive-vs-reference-data-types-in-javascript/
+  |->    https://javascriptweblog.wordpress.com/2010/09/27/the-secret-life-of-javascript-primitives/
+  |->    https://www.youtube.com/watch?v=9ooYYRLdg_g
 
 
 
