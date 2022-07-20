@@ -46,4 +46,3 @@ function bar2() {
 }
 
 // Exercise -3
-
