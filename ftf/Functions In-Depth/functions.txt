@@ -1,0 +1,58 @@
+Anatomy:
+    - Name: name of the functions can be given as a varaiable or just can me given after the 'function' key word.
+    - Parameters: Parameters are the are the varaiables given to the functions, while function invocation we assign arguments for these parameters.
+    - Declaration/Definitiion: it ts the curly brackets of the function in which we start writing our function code.
+    - Function Body: It is the code written inside the Declaration/Definitiion.
+    - Invocation/Call-time: we call function by giving paranthesis to the function name. ex-add().
+    - Arguments: Argumensts are the values passed into function invocation which were declared as parameters while writing creating the function.
+
+Arrow functions "()=>{}":
+    - In arraow finction we dont used the key word function.
+    - It is directly initiated by parameters and then followed by the arrow and then the functiion declaration.
+    - Note:
+        - For the parameters if we have only single parameter we dont have to give any paranthesis(brackets) for the parameters.
+        - For the function declaration if there is only one statement in the function body then we dont have to give function declaration as well.
+    - The behaviour of arrow functions is different from the regular function under the hood.
+    - Arrow functions dont have their own ".this" value the look up at the parent scope for the value of ".this".
+    - Arrow functions dosen't have its own value for the "arguments" keyword
+    - it is a good practise to always write return explicitly in the arrow function, when we want to return something from our arrow function, as sometimes the auto-return dosen't work on arrow functions.
+
+Template Literals:
+    -https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals
+
+Projecting:
+    - Projecting is taking a value out of a data structure and turn into another data structure.
+
+Spread/Rest Operator: 
+    - Spread operator copies the next remaining arguments into an array.
+
+Arguments Keyword:
+    - arguments keyword refrences all the arguments into a pseudo array. A pseudo array dosen't hvae some of the native array methods like push, pop, slice, etc...
+    - before spread/rest operator we had to rely on "arguments" keyword to do the same stuff.
+
+Pseudo Array(Array like object): 
+    - A pseudo array is like an array like object, so it is fundamentally an object. 
+    - to convert a pseudo array into a native array we can use two approaches.
+        - ES5(old)
+            - Array.prototype.slice.call(PseudoArray)
+        - ES6(new)
+            -Array.from(PseudoArray)
+
+Default Parameter:
+    - default paramaters are the parameters which are assigned with the predefined value while creating the function and they are passed with that default assigned value as it's argument, if no new argument is given inplace of the parameters's default value.
+
+Note:
+    - the "argument" keyword will only print the explicitly passed values as arguments passed to the function while function invocation(call)
+
+ex: const add = function(a, b=2) {
+    console.log(arguments);
+    return a+b;
+    // returns a+2
+}
+
+// calling the above function
+add(3);
+// output:
+    console.log(arguments) -> {0:3} -> gives a pseudo array & only explicit argument are logged.
+    return a + b -> 2 + 3 -> 5. 
+
