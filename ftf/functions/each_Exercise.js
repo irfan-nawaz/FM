@@ -13,7 +13,6 @@ function createSuspectObject(name) {
 }
 
 // Method-1 normal looping
-
 for (let i = 0; i < suspects.length; i++) {
   suspectsList[i] = createSuspectObject(suspects[i]);
 }
@@ -26,7 +25,6 @@ for (let i = 0; i < suspects.length; i++) {
 }
 
 // Method-2 using _.each method
-
 _.each(suspects, function (name) {
   let suspectObj = createSuspectObject(name);
   suspectsList.push(suspectObj);

@@ -45,4 +45,46 @@ function bar2() {
   }
 }
 
+// ol
+
+// il
+// nt or fem
+
+// il
+// nt or fem
+
+// ol
+
+// il
+// nt or fem
+
+// il
+// nt or fem
+
 // Exercise -3
+
+// NOTE:
+
+// 1.
+function createSuspectObject(name) {
+  return {
+    name: name,
+    color: name.split(" ")[1],
+    // normal practise (old)
+    speak: function () {
+      console.log("my name is " + name);
+    },
+  };
+}
+
+// 2.
+function createSuspectObject(name) {
+  return {
+    name: name,
+    color: name.split(" ")[1],
+    // ES6 new practise we can directly give functions as object key and call them as object.function() to execute and get value of key(function executed value)
+    speak() {
+      console.log("my name is " + name);
+    },
+  };
+}

@@ -1,0 +1,43 @@
+List Transformations:
+    - we take a list(collection of data in different aggangements like arrays) and extract the required data from the list by using various methods which can loop through it and also use different logic to get what we need from the list.
+        - list transformations are helpful when we deal with large data (ex a JSON response) so that we can extract the required data from the list.
+    - Various methods to dio the list transformations:
+        - we can directly loop throught th list and perform required operations on the list to get the required data from the list.
+        - We can use different pre-defined methods
+            - Each
+            - Map
+            - Filter
+        
+    Each Method:
+        - two types:
+            - _.each([],callback(element, index, list){})
+            - [].forEach(callback(element, index, list){}) -> native method
+        - Iterate over a list of elements passing values to the function
+        - Each invocation of the iterator, the function is called with three arguments: (element, index, list), 
+          If list is Javascript object, iterator's arguments will be (value, key, list).
+        - Note: The difference between _.each and forEach
+            - For _.each we have to give an array and callback function which will called on every list item
+            - Where as forEach is a method on an array which takes a callback function.
+        
+        Note: each dosent return anything it just iterates over every item calling the callback over every item in each iteration.
+    
+    Map Method:
+        - two types:
+            - _.map([],callback(element, index, list){})
+            - [].map(callback(element, index, list){}) -> native method
+        - Produces a new array of values by mapping each value in the original list through the callback function
+        - Each invocation of the iterator, the function is called with three arguments: (element, index, list), 
+          If list is Javascript object, iterator's arguments will be (value, key, list).
+        - in map we take list input and transform it into new array we can use it to just copy the original array into new empty array or create a new altered array based on the the required logic passed into the callback function.
+        - if we dont return anything in map callback function, then it will return undefined for every iteration.
+
+        - How to use and take advantage of map method:
+            each is just used to iterate over the list and pass elemets to the function but we can't get and store any thing using each
+
+            Instead we use map to store the data in new array or Javascript object we can just create a new array or object and assign map method to it or just push the new data using push method in the callback into the new variable.
+    
+    Filter Method:
+        - Filter is a function that takes an array ana a callback and return a new array similar to map
+        - the new array will only contain the values that return true from the callback so we have to filter the data in the callback using boolian.
+        - In filter the callback has to return boolian
+        - The new array returned by the filter method may be less than or equal size to the original array based on the boolian result.

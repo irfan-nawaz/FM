@@ -24,6 +24,9 @@ Objects:
 
     Note: Anything with dot in JavaScript is an object
 
+    - looping through objects:
+        - for (var key in object) {}
+
 
 primitive values:
      
@@ -72,10 +75,13 @@ BRACKET Notation:
     - then the reason to use dot notation is simply that it is more easy to type than bracket notation
     - in brackets we can perform any operation or give variables, functions,etc... so if we don't specify it as string in brackets it will look for any variable or function and return error if not found, if we actually want to use variable, function or give any mathematical operation as the input to the object then we can use bracket without any strings i.e"".
     - the brackets used for objects or arrays can perform following:
-                                                                        - pass numbers,
-                                                                        - pass strings
-                                                                        - perform mathematial operations
-                                                                        - pass IFFE functions,...
+        - pass numbers,
+        - pass strings
+        - perform mathematial operations
+        - pass IFFE functions,...
+
+- looping through arrays:
+    - for (let i = 0; i < array.length; i++) {}
 
 
 
