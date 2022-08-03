@@ -1,0 +1,17 @@
+Scope:
+    - Scope ia a area within a code where a varaiable has access to some value.
+    - Global Scope:
+        - Global Scope is accessable throught the entire code base.
+    - Block Scope:
+        - Block is anything under "{}" brackets.
+        - Block Scope can be created with "let"
+        - ex: for{let i =0; i<10; i++}
+                here "let" is declared under the brackets "{}", so it is craeating a block scope under those "{}" brackets, and is only vaild with the scope of those "{}" brackets.
+    - Function Scope:
+        - A functio has access to its own local scope varaiables.
+        - inputs to a function are treated as local scope variables.
+        - A function has access to the varaiables contained within the same scope in which the function was created in.
+        - A function's local scope varaiables are not avilable anywhere outside that function regardless of the context it's called in.
+        - if there are same inner/local scope and outer scope varaiables then the prefered one will be inner/local scope variable.
+        - A new variable scope is created for each call to a function.
+        - if we are calling the function twice or more then the previous function call values will have nothing to do with the new function call values but if we need to have the changes maintained, then we can declare a global varaiable and keep updating it with every function call.
