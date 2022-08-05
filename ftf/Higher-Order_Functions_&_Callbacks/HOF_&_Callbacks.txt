@@ -1,0 +1,18 @@
+Higher-Order Functions(HOF):
+    - HOF is what enables us to do functional Programming techniques.
+    - Function in javascript is a data, unlike many other programing languages.
+    - data means we can be able to pass functions around, return them without invoking, just like an object or any primitive ds.
+
+Callbacks: 
+    - Callbacks are just functions that we pass to functions.
+
+Reduce: 
+    - Reduce is a method that return a single value froma a function,
+    - It takes the following parameters:
+        - accumulator:
+            - accumulator is like a memory, over every iteration the operation performed by the reduce callback will be stored in the accumulator.
+        - currentValue:
+            - currentValue is the current value of the array iteration we take the current value and perform some operation with accumulator.
+        - initialValue:
+            - initialValue is the value that will be set into the accumulator in the first iteration.
+            - if initialValue is not passed as the argument then the fitst element of the list will become the initialValue and 2nd element of the list will become the current value.
