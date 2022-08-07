@@ -1,0 +1,8 @@
+Currying: 
+    -creating a function that can be later be called multiple times with different arguments.
+    - currying allows us to break-up arguments passed by the number of arguments.
+
+Composing: 
+    - Composing is when you take two functions and combine them
+    - in the functions which are given as arguments to the composing method,
+    - first the last argument(function) will run and the return value of that will be passed to the argument(function) before that last argument and so on untill we reach the first argument. 
