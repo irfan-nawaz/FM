@@ -48,3 +48,5 @@ _.map = function (list, callback) {
 _.map([1, 2, 3], function (val) {
   return val + 1;
 });
+// Output:
+// [2, 3, 4]

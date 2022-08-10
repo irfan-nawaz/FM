@@ -32,6 +32,17 @@ _.filter = function (arr, cb) {
   return array;
 };
 
+_.filter = function(list, callback){
+  let array = [];
+
+  _.each(list, function (v, i, list) {
+    if(callback(v,i,list)) {
+      array.push(v)
+    }
+  })
+  return array;
+}
+
 // Exercise data
 
 const videoData = [

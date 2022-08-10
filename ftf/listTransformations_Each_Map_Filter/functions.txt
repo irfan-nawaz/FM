@@ -3,7 +3,7 @@ List Transformations:
         - list transformations are helpful when we deal with large data (ex a JSON response) so that we can extract the required data from the list.
     - Various methods to dio the list transformations:
         - we can directly loop throught th list and perform required operations on the list to get the required data from the list.
-        - We can use different pre-defined methods
+        - We can use different pre-defined methods instead of writing complicated loops.
             - Each
             - Map
             - Filter

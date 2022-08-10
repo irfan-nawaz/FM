@@ -25,14 +25,15 @@ for (let i = 0; i < suspects.length; i++) {
 }
 
 // Method-2 using _.each method
-_.each(suspects, function (name) {
+// each method calls the callback function on each element of the list over every iteration.
+_.each(suspects, function (name, index, list) {
   let suspectObj = createSuspectObject(name);
   suspectsList.push(suspectObj);
 });
 
 // or
 
-_.each(suspects, function (name) {
+_.each(suspects, function (name, index, list) {
   suspectsList.push(createSuspectObject(name));
 });
 

@@ -15,12 +15,17 @@ _.each = function (list, callback) {
     }
   }
   // celebrate
-};
+};P
 
 _.each(["sally", "gerorgie", "rusty"], function (name, i, list) {
   if (list[i + 1]) {
-    console.log(name, "is younger than" + list[i + 1]);
+    console.log(name, "is younger than " + list[i + 1]);
   } else {
     console.log(name, "is oldest");
   }
 });
+
+// Output
+// sally is younger than gerorgie
+// gerorgie is younger than rusty
+// rusty is oldest
