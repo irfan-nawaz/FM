@@ -32,17 +32,6 @@ _.filter = function (arr, cb) {
   return array;
 };
 
-_.filter = function(list, callback){
-  let array = [];
-
-  _.each(list, function (v, i, list) {
-    if(callback(v,i,list)) {
-      array.push(v)
-    }
-  })
-  return array;
-}
-
 // Exercise data
 
 const videoData = [
@@ -123,3 +112,4 @@ const videoData = [
 _.filter(videoData, function (suspectObject) {
   return suspectObject.present;
 });
+// here in above filter function if the callback return true fot that specific element then that elemenat will be pushed into the new list

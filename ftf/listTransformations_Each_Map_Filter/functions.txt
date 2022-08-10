@@ -37,7 +37,7 @@ List Transformations:
             Instead we use map to store the data in new array or Javascript object we can just create a new array or object and assign map method to it or just push the new data using push method in the callback into the new variable.
     
     Filter Method:
-        - Filter is a function that takes an array ana a callback and return a new array similar to map
+        - Filter is a function that takes an array and a callback and return a new array similar to map
         - the new array will only contain the values that return true from the callback so we have to filter the data in the callback using boolian.
         - In filter the callback has to return boolian
         - The new array returned by the filter method may be less than or equal size to the original array based on the boolian result.
