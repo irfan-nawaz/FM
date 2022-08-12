@@ -1,6 +1,10 @@
+// default paramaters are the parameters which are assigned with the predefined value while creating the function and they are passed with that default assigned value as it's argument, if no new argument is given inplace of the parameters's default value.
+
+// in the below function b = 2; is a default parameter.
+
 const add = function(a, b=2) {
   console.log(arguments);
-  // longs only explicitly given arguments not the defuault ones.  
+  // The arguments keyword longs only explicitly given arguments not the defuault ones. So it basically cares about the arguments not what is there in parameters.
   return a+b;
   // returns a+2
 }

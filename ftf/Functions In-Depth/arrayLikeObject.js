@@ -1,3 +1,12 @@
+// Pseudo Array(Array like object): 
+// - A pseudo array is like an array like object, so it is fundamentally an object with numerical indices.
+// - It has length method from array but no other native array methods are present in Pseudo Array(Array like object).
+// - to convert a pseudo array into a native array we can use two approaches.
+    // - ES5(old)
+        // - Array.prototype.slice.call(PseudoArray)
+    // - ES6(new)
+        // -Array.from(PseudoArray)
+
 // Es5 old practise to use (Array.prototype.slice.call())
 const constructor = function () {
   const arr = Array.prototype.slice.call(arguments);

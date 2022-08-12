@@ -1,3 +1,4 @@
+// Projecting is taking a value out of a data structure and turn into another data structure.
 const videoData = [
   {
     name: "Miss Scarlet",
@@ -73,6 +74,20 @@ const videoData = [
   },
 ];
 
+// Filter
+let filterArray = _.filter(videoData, function (suspectObject) {
+  return suspectObject.present;
+});
+
+// Output:-
+// [
+  // {name: 'Miss Scarlet', present: true, rooms: Array(6)}
+  // {name: 'Reverend Green', present: true, rooms: Array(6)}
+  // {name: 'Colonel Mustard', present: true, rooms: Array(6)}
+  // {name: 'Professor Plum', present: true, rooms: Array(6)}}
+// ]
+
+// Map
 let proj = _.map(
   _.filter(videoData, function (suspectObject) {
     return suspectObject.present;
@@ -82,5 +97,5 @@ let proj = _.map(
   }
 );
 
-// Output
+// Output:-
 // ['Miss Scarlet', 'Reverend Green', 'Colonel Mustard', 'Professor Plum']

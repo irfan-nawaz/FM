@@ -13,7 +13,9 @@ Arrow functions "()=>{}":
         - For the parameters if we have only single parameter we dont have to give any paranthesis(brackets) for the parameters.
         - For the function declaration if there is only one statement in the function body then we dont have to give function declaration as well.
     - The behaviour of arrow functions is different from the regular function under the hood.
+    - Arrow function bind the context, it's context has value that "this" has to its parent context.
     - Arrow functions dont have their own ".this" value the look up at the parent scope for the value of ".this".
+    - this replaces the need for ".bind".
     - Arrow functions dosen't have its own value for the "arguments" keyword
     - it is a good practise to always write return explicitly in the arrow function, when we want to return something from our arrow function, as sometimes the auto-return dosen't work on arrow functions.
 
@@ -27,11 +29,12 @@ Spread/Rest Operator:
     - Spread operator copies the next remaining arguments into an array.
 
 Arguments Keyword:
-    - arguments keyword refrences all the arguments into a pseudo array. A pseudo array dosen't hvae some of the native array methods like push, pop, slice, etc...
+    - arguments keyword refrences all the arguments into a pseudo array at call time. A pseudo array dosen't hvae some of the native array methods like push, pop, slice, etc...
     - before spread/rest operator we had to rely on "arguments" keyword to do the same stuff.
 
 Pseudo Array(Array like object): 
-    - A pseudo array is like an array like object, so it is fundamentally an object. 
+    - A pseudo array is like an array like object, so it is fundamentally an object with numerical indices.
+    - It has length method from array but no other native array methods are present in Pseudo Array(Array like object).
     - to convert a pseudo array into a native array we can use two approaches.
         - ES5(old)
             - Array.prototype.slice.call(PseudoArray)
@@ -53,6 +56,10 @@ ex: const add = function(a, b=2) {
 // calling the above function
 add(3);
 // output:
-    console.log(arguments) -> {0:3} -> gives a pseudo array & only explicit argument are logged.
+    console.log(arguments) -> [3] -> gives a pseudo array & only explicit argument are logged.
     return a + b -> 2 + 3 -> 5. 
 
+functions are objects:-
+    - So functions are special kind of objects.
+    - in JS functions are also objects we can add properties to them.
+    - so when we see functions like .call() that is because functions are also objects.

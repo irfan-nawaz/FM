@@ -109,7 +109,7 @@ const videoData = [
   },
 ];
 
-_.filter(videoData, function (suspectObject) {
+let filterArray = _.filter(videoData, function (suspectObject) {
   return suspectObject.present;
 });
 // here in above filter function if the callback return true fot that specific element then that elemenat will be pushed into the new list
