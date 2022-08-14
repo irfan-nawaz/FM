@@ -30,7 +30,6 @@ beforeEach();
 
 // 3.
 // block scope can be created with let
-
 var r3 = function () {
     var where = 'outer1';
     {
@@ -45,7 +44,6 @@ beforeEach();
 
 // 4.
 // A function has access to the varaiables contained within the same scope in which the function was created in.
-
 var r4 = function () {
     var name = 'outer';
     var fn = function () {
@@ -172,7 +170,6 @@ beforeEach();
 
 // 12.
 // between calls to an inner function retains access to  a variable in an outer scope. Modifying those variables has a lasting effect between calls to the inner function.
-
 var r12 = function () {
     var outerCounter = 10;
 
@@ -213,5 +210,9 @@ var r13 = function() {
     window.retainedInnerFn();
     return ACTUAL;
 };
+r13();
+beforeEach();
 
 // note: Remember that always the scope of the function will be created where it was declared/defined, no matter from where we call it, so if we assign the function to global scope and call the function from global scope, it will still create the execution context in it's own scope where it was defined, and if it is an inner function we will still be able to acces the outer function(Higher-order function's) scope from that inner function's execution context.
+
+// Although we assign the inner function to the variable in the global window scope, but still that global function is bound (still exists) to the scope of its Higher-Order Function, So the most importanat point is, the global inner function keeps the scope of HOF alive untill the global variable is reassigned. once if the Higher order function is called again the window golobal variable will be reassigned again and now it will hold the function which beloings to the execution contecxt of newly called higher-order function.
