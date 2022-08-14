@@ -213,3 +213,5 @@ var r13 = function() {
     window.retainedInnerFn();
     return ACTUAL;
 };
+
+// note: Remember that always the scope of the function will be created where it was declared/defined, no matter from where we call it, so if we assign the function to global scope and call the function from global scope, it will still create the execution context in it's own scope where it was defined, and if it is an inner function we will still be able to acces the outer function(Higher-order function's) scope from that inner function's execution context.
