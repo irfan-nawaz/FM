@@ -1,0 +1,3 @@
+Closure: 
+    - Closure occours when you put two functions inside of a function.
+    - and we can take advantage of that by returning a function that retains the scope of parent(HOF) function even after it has been executed.

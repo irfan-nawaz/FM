@@ -43,3 +43,16 @@ const ifElse2 = (condition, isTrue, isFalse, ...args) => {
 ifElse(true, fn1, fn2, "hi", "bye", "good morning", "see you again");
 
 // here args will be ["hi", "bye", "good morning", "see you again"].
+
+// es5
+const ifElse3 = (condition, isTrue, isFalse) => {
+  const args = [].slice.call(arguments,3)
+  
+  return condition ? isTrue.apply(this, args) : isFalse.apply(this, args);
+};
+
+
+const logTrue = (msgs) => { console.log(msgs); };
+const logFalse = (msgs) => { console.log(msgs); };
+
+ifElse3(true, logTrue, logFalse, 'a', 'b');

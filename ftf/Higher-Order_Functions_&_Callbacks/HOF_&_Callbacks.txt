@@ -1,5 +1,6 @@
 Higher-Order Functions(HOF):
     - HOF is what enables us to do functional Programming techniques.
+    - HOF can take another function as input and also we can return a function as an output.
     - Function in javascript is a data, unlike many other programing languages.
     - data means we can be able to pass functions around, return them without invoking, just like an object or any primitive ds.
 
@@ -8,11 +9,22 @@ Callbacks:
 
 Reduce: 
     - Reduce is a method that return a single value froma a function,
-    - It takes the following parameters:
-        - accumulator:
-            - accumulator is like a memory, over every iteration the operation performed by the reduce callback will be stored in the accumulator.
-        - currentValue:
-            - currentValue is the current value of the array iteration we take the current value and perform some operation with accumulator.
-        - initialValue:
-            - initialValue is the value that will be set into the accumulator in the first iteration.
-            - if initialValue is not passed as the argument then the fitst element of the list will become the initialValue and 2nd element of the list will become the current value.
+    For Array:
+        - Reduce method takes two arguments, 
+            - the first a callback function with 2 parameters named accumulator and current value.
+            - second one is optional i.e initial value. Tip: we can initialize initial value to an empty array or object to declate their data type.
+
+    For Object: 
+        - Reduce method take two arguments 
+            - the first a callback function with 3 parameters named accumulator, current value and key.
+            - second is optional i.e initial value. Tip: we can initialize initial value to an empty array or object to declate their data type.
+
+        - Note if initial value in not given then accumulator will hold first element of the list and cuurent value will hold 2nd element of the list for the first iteration.
+
+            - accumulator:
+                - accumulator is like a memory, over every iteration the operation performed by the reduce callback will be stored in the accumulator.
+            - currentValue:
+                - currentValue is the current value of the array iteration we take the current value and perform some operation with accumulator.
+            - initialValue:
+                - initialValue is the value that will be set into the accumulator in the first iteration.
+                - if initialValue is not passed as the argument then the fitst element of the list will become the initialValue and 2nd element of the list will become the current value.

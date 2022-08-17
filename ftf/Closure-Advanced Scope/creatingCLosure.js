@@ -9,9 +9,10 @@ const myAlert = () => {
 
 const funcAlert = myAlert();
 const funcAlert2 = myAlert();
-
 funcAlert();
 
+// Closure Demonstartion.
+// Example-1
 const newClue = (name) => {
   const length = name.length;
 
@@ -21,26 +22,5 @@ const newClue = (name) => {
   };
 };
 
-// ES5
-function countClues() {
-  var n = 0;
-  return {
-    count: function () {
-      return ++n;
-    },
-    reset: function () {
-      return (n = 0);
-    },
-  };
-}
-
-// ES6 equivalent
-
-const countClues = () => {
-  let n = 0;
-
-  return {
-    count: () => n++,
-    reset: () => (n = 0),
-  };
-};
+const didGreenDoItWithA =  newClue('green');
+didGreenDoItWithA("lead pipe"); //... so on  we can try with different names and weapons.

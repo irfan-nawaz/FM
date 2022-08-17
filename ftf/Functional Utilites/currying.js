@@ -16,3 +16,17 @@ var curried = _.curry(abc);
 curried(1)(2)(3);
 
 curried(1, 2)(3);
+
+
+// implemntation
+const curry = (fn) => {
+  return (arg) => {
+    return (arg2) => {
+      return fn(arg, arg2);
+    }
+  }
+}
+
+var curried2 = curry(fn);
+
+curried2(arg)(arg2);
