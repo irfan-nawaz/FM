@@ -1,0 +1,30 @@
+1. Thread of execution:
+    - JS does two things 
+        - it goes through code line by line and executers each line of code.
+        - it saves the data in computers memory when it encounters declarators like var, let, const, function etc... to come back to them later-on and use.
+    - Note: this is just a basic and over-simplified explination there will be lot more when jS ecexutes the code which we will learn later.
+
+2. Memory:
+    - all the data we encounter through the thread of execution is stored in memory.
+
+3. Identifier: 
+    - Label for anything that we store in the memory.
+
+4. Execution Context:
+    - when a function is called it will create a new execution context and it will have it's own scope where the function was originally defined, regardless from where it was called from.
+    - a new execution context is created for every function call.
+    - this execution context is unique to each function call and data from one function call's execution context can't be accessed in other function call's execution context even for the same function.
+
+5. Function Call:
+    - The JS can store data as well as the code in the function and run the function code again when called. 
+
+6. Parameter vs Argument:
+    - Parameter is like an identifier. It is defined during function declaration.
+    - argument is like the value which the identifier (paramater) holds in memory. it is passed during function call in palce of arguments.
+
+7. Call Stack:
+    - It keeps track of what function is JS currently running.
+    - when a function is invoked/called it will be added to call stack to keep track of where the thread of execution is. 
+    - the top most item in the call stack is where the thread of execution is currently present.
+    - when the function is executed then it will pop out of the call stack.
+    - note always in the bottom of the call stack there is global scope, so if there is no function in call-stack it means that it is in global scope.

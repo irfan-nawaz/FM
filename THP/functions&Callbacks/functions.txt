@@ -1,0 +1,24 @@
+Function Usage:
+    - instead of re-writing same come again and agian we can declare that repeating piece of code in a function can call function multiple times to run that code.
+    - we can genralize functions to make them more resuable. For ex: we can dynamically decide the value of parameters at the time of funcion call through arguments.
+    - with functions we can avoid (D.R.Y) principle
+
+Higher Order Functions:
+    - Any function that takes in or returns out a function is called higher order function.
+    - we may not want to decide exactly what some functionality is untill we run the function.
+    - In higher order functions we can not only leave our parameters TBD during execution but also some code can be left as TBD untill the execution of the function.
+    - yhis will make our functions super reusable and super general.
+
+Callback Functions: 
+    - they are functions passsed into higher order functions the callback function can be dynamically delcared during the higher order function call.
+
+Functions are Firt Class Objects:
+    - functions have all features of objects.
+    - first class menas all the features will be present.
+
+Methods: 
+    - Methods are functions stores as properties of other objects.
+
+Arrow Functions: 
+    - arrow functions are short hand for normal functions. 
+    - but there are changes under the hood.
