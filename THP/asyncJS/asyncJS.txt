@@ -1,0 +1,53 @@
+When we call a function the the thread of execution weaves into the function and untill we finish running this function we are not allowed to get out of it, as JS is a synchronous programming language.
+
+Js is a single threaded execution i.e we can only do one thing at a time we have a line of code to run then we can only move to next if current line is executed.
+
+But what if the current code is taking a long to time to execute we have to wait untill and our application will freeze till it's execution.
+
+So we use help of browser apis to make our javascript asynchronus we can access these apis from browser using special functions.
+
+Running of javascript:
+    - Js runs in the JSEngine in browser (browser consists of JSEngine, apis, DOM, and many other nonJS features.)
+    - we have thread of execution to run the code 
+    - we have memory to save the data while running the code
+    - we have call stack, callback queue, event loop, microtask queue, promises to keep track of the code and ensure smooth and orderly execution of JS code.
+    - JS uses the browser featues and makes itself more powerful like becoming asynchronus and giving network calls etc...
+    - before ES6 there was no way to track what is happening in the browser OTHER THAN JS code and aslo the data which comes from browser apis was not easily accesable 
+    - so the promises were introduced to keep track of what is happening in the browser and aslo to store data passed from various browser functionalites. 
+
+Asynchronosity in JavaScript:
+    - it is the backbone for modern web development in JS
+    - synchronous execution is very slow and wastes much time as we can only run one line at a time and we have to wait untill that is executed to move further.
+
+    Core JS Engine has 3 main parts:
+        - Thread of execution
+        - Memory
+        - Call stack
+
+    To add in Asynchronicity in JS we add some new components
+        - Web browser
+        - Promises
+        - Event loop, Callback/task queue and micro task queue.
+    
+    - JS runs in the browser, but browser has many other functionalities apart from running JS.
+    - some of the features of web browser have that JS dosen't have are:
+          Name(facade functions) : api
+        - dev tools : dev tools
+        - console : console
+        - XHR/fetch : Network Requests
+        - document : HTML DOM
+        - setTimeout/setInterval : timer
+        - local storage : local storage
+        - socket
+        
+    ES5 asynchronous model: 
+        JScode, thread, memory, callstack, browser, callback queue, eventloop.
+
+        Problems with the above approach.
+        - callback hell.
+            - our response data from browser is only available in the callback function, so any operation that we are required to perform with that data should be done inside that callback function itself, so this might result in callback hell.
+        - error handling is not clean.
+
+        ES6+ solution to above issues:
+        - Promises: before promises it was difficult to track what was happening in the browser in acccordance with what is running in JavaScript,
+            when we trigger something in the browser promises have some consequence in javascript memory as well so that it is not only related to the web browser.

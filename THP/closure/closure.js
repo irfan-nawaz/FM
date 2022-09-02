@@ -15,6 +15,11 @@ const generatedFunc = createFunction();
 // so now the function is still accessable.
 // hear the intresting part is how we will be able to still access the variable environment of HOF even after its execution?
     // Ans: while creating a function we have some hidden propertiers created along with it one of such hidden peroperty is called "[[scope]]" this stores all the variable environment of HOF.
+    // the different names for the storage of this variable environment are: 
+    // - Closed over ‘Variable Environment’ (C.O.V.E.)
+    // - Persistent Lexical Scope Referenced Data (P.L.S.R.D.)
+    // - ‘Backpack’
+    // - ‘Closure’
 const result = generatedFunc(3); // 6
 
 function outer () {
