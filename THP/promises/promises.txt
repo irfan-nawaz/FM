@@ -1,0 +1,23 @@
+Promises were introduced in ES6
+
+- Need for promise: when we make a network request 
+
+- they are like place holders for the futute data passed by the network request.
+
+- they allow us to reason about values by eliminating time as the concern wrapped around the value with the ignorance of timing.
+
+- the mechanism of promise are similar to monads.
+
+- unlike other asynchronous APIs promises have access to both browser as well as javaScript memory.
+
+- promise object consistes of three prperties 
+    1. value -> the value which the request responds with and gets stored.
+    2. on fullfillment array [hidden property] -> gets filled with callback function using .then and later it gets automatically triggered when the promise.value gets updated and sent to the microtask queue.
+    3. on rejection array [hidden property] -> gets filled with callback using .catch or give a second argument to .then first one being for the success response.
+
+- when the browser updates the promise.value then JS will auto run the function on onfulfillment array by passing vlaue as agument and send it to micro-task queue.
+
+Note: difference between promise and other asynchronous methods.
+        - in other asynchronous methods we give our logic as callback functions to the asynchronous method, by doing so we loose the control over the callback and give it to the asynchronous method.
+
+        - in case of promise we invert this behavior of giving control when we pass something to the asynchronous methods and have more control over our program.
